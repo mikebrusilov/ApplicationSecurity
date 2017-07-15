@@ -121,19 +121,23 @@ Code analysis tools are software-based tools that inspect application source cod
 Code review is the manual inspection of application source code typically by a security analyst.
 Both code analysis and code review are an important component of any secure application development effort. They allow you to detect and correct vulnerabilities in legacy applications, as well as detect and correct vulnerabilities in current applications fairly early in the development lifecycle, where the cost of fixing vulnerabilities is low.
 
-Code Analysis
+### Code Analysis
 All applications are first expressed as source code. These are the human readable instructions created by developers that implement software, such as Java code.
 A compiler and linker takes that source code and turns it into machine code, often called an application binary.
 The key difference between static analysis tools and binary analysis tools is the input into these tools. Static analysis tools analyze source code, while binary analysis tools analyze application binaries. Each have specific benefits and limitations which we will discuss next.
 
-Static Analysis
+### Static Analysis
 Compared to manual code reviewers, static analysis software tools can scale fairly easily to analyze large amounts of code, and they are objective and unbiased. When compared to binary analysis, static analysis technology is generally more mature. Static analysis tools tend to find more vulnerabilities and provide more accuracy than binary analysis tools. Finally the issues identified by static analysis tools are easier to debug, since they work with human readable source code rather than compiled code.
 Static analysis tools also have certain limitations. First, they read source code and are language specific, so organizations that use many programming languages may require many static analysis tools. In addition, they may produce false positives by flagging items that are not vulnerabilities, and produce false negatives by missing actual vulnerabilities. This often creates more work for development teams, and can eventually degrade confidence in these tools. Finally, static analysis tools can only find implementation flaws, that is, specific coding patterns that lead to vulnerabilities. They cannot necessarily detect flaws related to the business logic of the application.
-Binary Analysis
+
+### Binary Analysis
 Now let’s take a look at some pros and cons of binary analysis tools.
 Like static analysis tools, binary analysis tools can scale to review large amounts of code, and are more objective and unbiased than human reviewers. And, binary analysis tools are more accurate than static analysis tools. This is because binary analysis tools operate on the actual code that gets executed, whereas static analysis tools operate on source code, which may get optimized and re-arranged by compilers.
+
 However, binary analysis tools do have limitations. They are far less mature when compared to static analysis tools, so the breadth of vulnerabilities that they can detect is limited for now. Also, the bugs identified by binary analysis tools are difficult to debug, since developers have to be able to interpret compiled code. Finally, binary analysis tools suffer from the same limitations as static analysis tools: They are language-specific, so organizations may require many tools; they produce false positives and false negatives; and they are unable to detect issues other than implementation flaws.
-Manual Code Review
+
+### Manual Code Review
 Manual code review has benefits and limitations of its own.
 To begin with the benefits: Manual code reviews have the distinct advantage over code analysis of generally producing fewer false negatives and false positives. And, human code reviewers can find not only the implementation flaws, but also flaws in design and in business logic.
+
 While manual code review provides some great benefits, it does come with certain limitations. First, manual code review is very time consuming and does not scale very well. Another limitation is that reviewers can become fatigued from reviewing large amounts of code, which diminishes their ability to accurately identify vulnerabilities. In addition, different reviewers have different areas of expertise, so different vulnerabilities may get identified depending on who reviews the code.
