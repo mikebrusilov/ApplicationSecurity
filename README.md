@@ -66,9 +66,9 @@ Rejects only known bad input, and allows everything else. Its inherent weakness 
 
  
 ### Common Application Attacks
-*Buffer overflows
-*SQL Injection attacks
-*Race conditions
+* Buffer overflows
+* SQL Injection attacks
+* Race conditions
 
 Buffer Overflow:
 Buffer overflows occur in applications where more data is written into a buffer than that buffer has been allocated to handle. The result is that memory adjacent to the buffer gets overwritten, which typically causes the application to behave incorrectly or crash.
