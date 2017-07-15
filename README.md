@@ -1,30 +1,39 @@
-##Concepts and Terms
+# Concepts and Terms
 
-Vulnerability:
+**Vulnerability:**
 A vulnerability is a weakness in your application that an attacker could potentially exploit. This can be weakness in the code itself or perhaps even an application design flaw.
-Exploit:
+
+**Exploit:**
 An exploit is a malicious application or a set of commands used to take advantage of vulnerabilities in your application. The purpose of an exploit is to produce some unexpected or unintended behavior in your application, such as exposing sensitive information or gaining unauthorized access to certain components.
-Countermeasure:
+
+**Countermeasure:**
 A countermeasure is a step taken to address or reduce the potential for damage caused by a vulnerability in your application code.
 Threat / Threat Agent:
 A threat is an event that could exploit a vulnerability in your application code and cause some undesirable behavior. Malicious hackers, or attackers, are often called threat agents because they exploit vulnerabilities in your application code to meet their objectives.
-Attack:
+
+**Attack:**
 An attack is an action that leverages one or more vulnerabilities to realize a threat. For example, a malicious hacker may exploit a vulnerability in your authentication system to gain unauthorized access to an area of your application.
-Asset:
+
+**Asset:**
 An asset is a resource of value. For example, an asset to your organization may be a database of the health or financial information of your customers.
-Risk:
+
+**Risk:**
 Finally, risk is the potential for loss or damage to an asset. Whenever a developer follows insecure coding practices, they increase the risk that an attacker may be able to exploit the flawed code.
  
  
 
  
-Managing Application Security Risks:
+# Managing Application Security Risks:
 No application can be completely secure or resilient to all attacks!
 Four Main Approaches to managing risk.
-1.       Acceptance
-2.       Avoidance
-3.       Transference
-4.       Mitigation
+
+1 Acceptance
+
+2 Avoidance
+
+3 Transference
+
+4 Mitigation
 
 Accepting risk means that you take no proactive measures to address your risk and that you are willing to accept the full consequences of a threat to an asset. Usually, you should use this approach only as a last resort. When accepting risk, you should always have a contingency plan, which is a set of actions you plan to take if the risk is realized.
 Avoiding risk is the opposite of accepting risk. To avoid risk, you remove the exposure of an asset to the threat, or you remove the asset entirely.
