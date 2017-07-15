@@ -48,21 +48,27 @@ The final risk management approach is to mitigate risk, which means that you tak
  
 # Anatomy of a Basic Application Attack
 Any method that allows data to be input to an application is considered an interface. Common types of user interfaces include web forms, command line parameters, and APIs.
+
 An attacker interacts with your application in order to perform nefarious actions. To do this, attackers identify a vulnerability they can exploit to submit malicious data to the application in order to execute an unintended command or action, for example, an attacker could supply a malicious data that would cause your application to execute a command, expose sensitive information, or even cause your application to crash making it unavailable to users.
+
 As a developer, it is vital to counter measures to ensure your application accepts only valid data and blocks malicious data. This process is referred to as input validation. Input validation helps verify that input is in a correct and safe format to be used by your application. While not a silver bullet, input validation can be used to help mitigate many common application vulnerabilities.
+
 What are the primary techniques for validating data? How do you determine if data is valid or not? This leads to the next topic in our discussion, input validation techniques.
-Whitelist Validation with RegEx
+
+## Whitelist Validation with RegEx
 Regular expressions provide a structured method for concise pattern matching that you can use to implement whitelist validation. Several regular expression libraries are available, and many programming languages have built-in regular expression support. For example, the .NET Framework and Java programming languages natively support regular expressions.
+
 To use regular expressions, you first define regular expressions that describe expected input data types, ranges, formats, and lengths where appropriate. You then compare the input received by your application against the corresponding regular expression. If the input does not match the regular expression, it should be considered bad and rejected. If the input matches the regular expression, then it is considered safe and can be used.
-Blacklist Validation
+
+## Blacklist Validation
 Rejects only known bad input, and allows everything else. Its inherent weakness is that the set of all bad inputs is potentially infinite and cannot be completely detected, whereas the whitelist approach models a finite set and is easier to implement and less prone to error. Therefore, always use whitelist validation, and use blacklisting only as a supplementary measure.
  
 
  
-Common Application Attacks
-·         Buffer overflows
-·         SQL Injection attacks
-·         Race conditions
+### Common Application Attacks
+*Buffer overflows
+*SQL Injection attacks
+*Race conditions
 
 Buffer Overflow:
 Buffer overflows occur in applications where more data is written into a buffer than that buffer has been allocated to handle. The result is that memory adjacent to the buffer gets overwritten, which typically causes the application to behave incorrectly or crash.
