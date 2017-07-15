@@ -25,6 +25,7 @@ Finally, risk is the potential for loss or damage to an asset. Whenever a develo
  
 # Managing Application Security Risks:
 No application can be completely secure or resilient to all attacks!
+
 Four Main Approaches to managing risk.
 
 1 Acceptance
@@ -36,13 +37,16 @@ Four Main Approaches to managing risk.
 4 Mitigation
 
 Accepting risk means that you take no proactive measures to address your risk and that you are willing to accept the full consequences of a threat to an asset. Usually, you should use this approach only as a last resort. When accepting risk, you should always have a contingency plan, which is a set of actions you plan to take if the risk is realized.
+
 Avoiding risk is the opposite of accepting risk. To avoid risk, you remove the exposure of an asset to the threat, or you remove the asset entirely.
+
 This leads us to the next risk management technique called transference, which means you transfer the burden of the risk onto a third party. For example, instead of handling card information yourself, you may elect to pay a third-party with expertise in the payment card industry to handle it for you, thus transferring the risk to them. Insurance is a classic example of transferring risk.
+
 The final risk management approach is to mitigate risk, which means that you take proactive steps to reduce an asset’s exposure to a risk. For example, you can reduce the risk of an attacker guessing user account passwords by requiring all users to use strong passwords. Or, to reduce the chances of an attacker intercepting sensitive data transmitted between your online application and users, you could protect the data in transit by using Transport Layer Security (TLS). Mitigation is the most common and recommended way to address application security risks. It should be your primary approach to managing application security risk.
  
 
  
-Anatomy of a Basic Application Attack
+# Anatomy of a Basic Application Attack
 Any method that allows data to be input to an application is considered an interface. Common types of user interfaces include web forms, command line parameters, and APIs.
 An attacker interacts with your application in order to perform nefarious actions. To do this, attackers identify a vulnerability they can exploit to submit malicious data to the application in order to execute an unintended command or action, for example, an attacker could supply a malicious data that would cause your application to execute a command, expose sensitive information, or even cause your application to crash making it unavailable to users.
 As a developer, it is vital to counter measures to ensure your application accepts only valid data and blocks malicious data. This process is referred to as input validation. Input validation helps verify that input is in a correct and safe format to be used by your application. While not a silver bullet, input validation can be used to help mitigate many common application vulnerabilities.
