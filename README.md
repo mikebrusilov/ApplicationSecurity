@@ -1,4 +1,4 @@
-# Concepts and Terms
+# Important Terms
 
 **Vulnerability:**
 A vulnerability is a weakness in your application that an attacker could potentially exploit. This can be weakness in the code itself or perhaps even an application design flaw.
